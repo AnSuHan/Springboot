@@ -17,6 +17,20 @@ Spring Initializr는 Spring Boot 프로젝트를 쉽게 생성할 수 있는 웹
 ## 실행 명령
 - ./gradlew bootRun
 
+## Gradle 빌드 및 실행
+
+### 1. 빌드
+./gradlew build
+
+**build/libs에 JAR 파일 2개 생성:**
+- `demo-0.0.1-SNAPSHOT.jar` (실행 가능, **사용**)
+- `demo-0.0.1-SNAPSHOT-plain.jar` (라이브러리)
+
+### 2. 실행
+java -jar build/libs/demo-0.0.1-SNAPSHOT.jar
+
+**확인:** `http://localhost:8080/message` 정상 동작[web:99][web:102]
+
 # 코드
 ## 어노테이션
 ### http
