@@ -1,0 +1,20 @@
+{
+  "name": "playwright-crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "crawl:categories": "node category-crawler.js",
+    "crawl:books": "node crawler.js",
+    "crawl:watch": "nodemon crawler.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.16.3",
+    "playwright": "^1.57.0",
+    "uuid": "^13.0.0"
+  }
+}

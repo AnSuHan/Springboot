@@ -16,12 +16,27 @@ https://books.toscrape.com/
   - domain/entity/ 테이블 구조 설정
 - DTO, repository, service, controller 생성
 - 프론트 프로젝트 생성 및 설정
-  - react 프로젝트(create-react-app@5.1.0)
+  - 설정
   - ``` bash
-    npx create-react-app crawler-frontend
-    cd crawler-frontend
-    npm install axios react-router-dom @types/uuid
-    npm start
+    npm init -y
+    npm install playwright pg uuid
+    npm exec playwright install chromium
+    ```
+- 실행
+  - 1회 실행
+    ```
+    # 1️⃣ 카테고리 먼저 수집 (테이블 자동 생성)
+    npm run crawl:categories
+    
+    # 2️⃣ 책 크롤링 (수정된 버전)
+    npm run crawl:books
+    
+    ```
+
+  - 실시간 감시 (변경시 자동 재실행)
+    ```bash
+      npm install -g nodemon
+      npm run crawl:watch
     ```
 ---
 ### 사용 예시

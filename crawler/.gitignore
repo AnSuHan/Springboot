@@ -35,3 +35,10 @@ out/
 
 ### VS Code ###
 .vscode/
+
+# Playwright
+playwright-crawler/node_modules
+playwright-report/
+test-results/
+test-artifacts/
+*.pem
