@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "crawl:categories": "node category-crawler.js",
     "crawl:books": "node crawler.js",
-    "crawl:watch": "nodemon crawler.js"
+    "crawl:watch": "nodemon crawler.js",
+    "dump:categories": "node crawler_result.js dump:categories",
+    "dump:books": "node crawler_result.js dump:books"
   },
   "keywords": [],
   "author": "",
