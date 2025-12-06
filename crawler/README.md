@@ -16,11 +16,13 @@ https://books.toscrape.com/
   - domain/entity/ 테이블 구조 설정
 - DTO, repository, service, controller 생성
 - 프론트 프로젝트 생성 및 설정
-  - react 프로젝트
-  - npx create-react-app crawler-frontend
+  - react 프로젝트(create-react-app@5.1.0)
+  - ``` bash
+    npx create-react-app crawler-frontend
     cd crawler-frontend
     npm install axios react-router-dom @types/uuid
     npm start
+    ```
 ---
 ### 사용 예시
 #### 1. 카테고리 크롤링
